@@ -26,18 +26,14 @@ jobs:
           git log --pretty=format:"- [%h](https://github.com/${GITHUB_USERNAME}/${GITHUB_REPOSITORY}/commit/%h): (%s) ([@%an](https://github.com/%an))" --grep="^fix:" > fixes.txt
           echo "# Changelog" > CHANGELOG.md
 
-          echo -e "\n**New Features**" >> CHANGELOG.md
           if [ -s features.txt ]; then
+              echo -e "\n**New Features**" >> CHANGELOG.md
               cat features.txt >> CHANGELOG.md
-          else
-              echo -e "\n- No new features." >> CHANGELOG.md
           fi
 
-          echo -e "\n**Bug Fixes**" >> CHANGELOG.md
           if [ -s fixes.txt ]; then
+              echo -e "\n**Bug Fixes**" >> CHANGELOG.md
               cat fixes.txt >> CHANGELOG.md
-          else
-              echo -e "\n- No new fixes." >> CHANGELOG.md
           fi
 
           rm features.txt fixes.txt
