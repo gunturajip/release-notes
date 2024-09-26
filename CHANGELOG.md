@@ -1,5 +1,4 @@
 # Changelog
-\n## Features
-No new features.
-\n## Fixes
-fix: update again again again feature 1
+New Features
+[https://github.com//gunturajip/release-notes/commit/42c6eb8](42c6eb8): (feat: feature 2) ([@gunturajip](https://github.com/gunturajip))Bug Fixes
+No new fixes.
