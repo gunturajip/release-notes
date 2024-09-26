@@ -22,8 +22,8 @@ jobs:
 
       - name: Generate Changelog
         run: |
-          git log --pretty=format:"- [%h](https://github.com/${GITHUB_USERNAME}/${GITHUB_REPOSITORY}/commit/%h): (%s) ([@%an](https://github.com/%an))" --grep="^feat:" > features.txt
-          git log --pretty=format:"- [%h](https://github.com/${GITHUB_USERNAME}/${GITHUB_REPOSITORY}/commit/%h): (%s) ([@%an](https://github.com/%an))" --grep="^fix:" > fixes.txt
+          git log --all --pretty=format:"- [%h](https://github.com/${GITHUB_USERNAME}/${GITHUB_REPOSITORY}/commit/%h): (%s) ([@%an](https://github.com/%an))" --grep="^feat:" > features.txt
+          git log --all --pretty=format:"- [%h](https://github.com/${GITHUB_USERNAME}/${GITHUB_REPOSITORY}/commit/%h): (%s) ([@%an](https://github.com/%an))" --grep="^fix:" > fixes.txt
           echo "# Changelog" > CHANGELOG.md
 
           if [ -s features.txt ]; then
