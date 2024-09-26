@@ -22,21 +22,18 @@ jobs:
 
       - name: Generate Changelog
         run: |
-          # Extract the commit messages with "feat:" and "fix:"
-          git log --pretty=format:"%s" --grep="^feat:" > features.txt
-          git log --pretty=format:"%s" --grep="^fix:" > fixes.txt
-
-          # Create the changelog file
+          git log --pretty=format:"[https://github.com/${GITHUB_USERNAME}/${GITHUB_REPOSITORY}/commit/%h](%h): (%s) ([@%an](https://github.com/%an))" --grep="^feat:" > features.txt
+          git log --pretty=format:"[https://github.com/${GITHUB_USERNAME}/${GITHUB_REPOSITORY}/commit/%h](%h): (%s) ([@%an](https://github.com/%an))" --grep="^fix:" > fixes.txt
           echo "# Changelog" > CHANGELOG.md
 
-          echo "\n## Features" >> CHANGELOG.md
+          echo "New Features" >> CHANGELOG.md
           if [ -s features.txt ]; then
             cat features.txt >> CHANGELOG.md
           else
             echo "No new features." >> CHANGELOG.md
           fi
 
-          echo "\n## Fixes" >> CHANGELOG.md
+          echo "Bug Fixes" >> CHANGELOG.md
           if [ -s fixes.txt ]; then
             cat fixes.txt >> CHANGELOG.md
           else
