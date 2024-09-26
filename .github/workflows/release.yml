@@ -17,8 +17,8 @@ jobs:
       # Step 2: Set up Git configuration
       - name: Set up Git
         run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "gunturajip"
+          git config --global user.email "gunturaji852@gmail.com"
 
       # Step 3: Generate Changelog from commit messages
       - name: Generate Changelog
