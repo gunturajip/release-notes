@@ -1,8 +1,7 @@
 # Changelog
 
 **New Features**
-
-- No new features.
-
+- [af629de](https://github.com//gunturajip/release-notes/commit/af629de): (feat: feature 5) ([@gunturajip](https://github.com/gunturajip))
 **Bug Fixes**
-- [70c784a](https://github.com//gunturajip/release-notes/commit/70c784a): (fix: feature 3) ([@gunturajip](https://github.com/gunturajip))
+
+- No new fixes.
