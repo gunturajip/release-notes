@@ -1,6 +1,8 @@
 # Changelog
 
 **New Features**
+- [aed75de](https://github.com//gunturajip/release-notes/commit/aed75de): Merge pull request #9 from gunturajip/dev ([@Guntur Aji Pratama](https://github.com/Guntur Aji Pratama))
+- [d71035d](https://github.com//gunturajip/release-notes/commit/d71035d): feat: feature 14 ([@gunturajip](https://github.com/gunturajip))
 - [fa17ed5](https://github.com//gunturajip/release-notes/commit/fa17ed5): feat: feature 13 ([@gunturajip](https://github.com/gunturajip))
 - [b1e94c4](https://github.com//gunturajip/release-notes/commit/b1e94c4): feat: feature 13 ([@gunturajip](https://github.com/gunturajip))
 - [8db3f90](https://github.com//gunturajip/release-notes/commit/8db3f90): feat: feature 12 ([@gunturajip](https://github.com/gunturajip))
@@ -19,6 +21,8 @@
 
 
 **Bug Fixes**
+- [a38fc97](https://github.com//gunturajip/release-notes/commit/a38fc97): Merge pull request #10 from gunturajip/dev ([@Guntur Aji Pratama](https://github.com/Guntur Aji Pratama))
+- [3ef0ff9](https://github.com//gunturajip/release-notes/commit/3ef0ff9): fix: feature 13 ([@gunturajip](https://github.com/gunturajip))
 - [bbab872](https://github.com//gunturajip/release-notes/commit/bbab872): fix: feature 12 ([@gunturajip](https://github.com/gunturajip))
 - [38b6bb0](https://github.com//gunturajip/release-notes/commit/38b6bb0): fix: feature 11 ([@gunturajip](https://github.com/gunturajip))
 - [29a76c0](https://github.com//gunturajip/release-notes/commit/29a76c0): fix: feature 10 ([@gunturajip](https://github.com/gunturajip))
