@@ -1,4 +1,4 @@
 # Changelog
 
 **Bug Fixes**
-- [29a76c0](https://github.com//gunturajip/release-notes/commit/29a76c0): (fix: feature 10) ([@gunturajip](https://github.com/gunturajip))
+- [38b6bb0](https://github.com//gunturajip/release-notes/commit/38b6bb0): (fix: feature 11) ([@gunturajip](https://github.com/gunturajip))
