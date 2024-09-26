@@ -22,13 +22,25 @@ jobs:
 
       - name: Generate Changelog
         run: |
-          git log --pretty=format:"%s" > commit_messages.txt
+          git log --oneline --grep="^feat:" > features.txt
+          git log --oneline --grep="^fix:" > fixes.txt
           echo "# Changelog" > CHANGELOG.md
+
           echo "\n## Features" >> CHANGELOG.md
-          grep '^feat' commit_messages.txt >> CHANGELOG.md || echo "No new features." >> CHANGELOG.md
+          if [ -s features.txt ]; then
+            cat features.txt >> CHANGELOG.md
+          else
+            echo "No new features." >> CHANGELOG.md
+          fi
+
           echo "\n## Fixes" >> CHANGELOG.md
-          grep '^fix' commit_messages.txt >> CHANGELOG.md || echo "No new fixes." >> CHANGELOG.md
-          rm commit_messages.txt
+          if [ -s fixes.txt ]; then
+            cat fixes.txt >> CHANGELOG.md
+          else
+            echo "No new fixes." >> CHANGELOG.md
+          fi
+
+          rm features.txt fixes.txt
 
       - name: Commit and Push Changelog
         run: |
@@ -37,3 +49,14 @@ jobs:
           git push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Create Release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: "v${{ github.run_number }}"
+          release_name: "Release ${{ github.run_number }}"
+          body_path: CHANGELOG.md
+          draft: false
+          prerelease: false
