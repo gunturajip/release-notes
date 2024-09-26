@@ -1,0 +1,39 @@
+name: Generate Changelog
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  changelog:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Check out the repository
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      # Step 2: Set up Git configuration
+      - name: Set up Git
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+      # Step 3: Generate Changelog from commit messages
+      - name: Generate Changelog
+        run: |
+          git log --pretty=format:"%s" > commit_messages.txt
+          echo "# Changelog" > CHANGELOG.md
+          echo "\n## Features" >> CHANGELOG.md
+          grep '^feat' commit_messages.txt >> CHANGELOG.md || echo "No new features." >> CHANGELOG.md
+          echo "\n## Fixes" >> CHANGELOG.md
+          grep '^fix' commit_messages.txt >> CHANGELOG.md || echo "No new fixes." >> CHANGELOG.md
+          rm commit_messages.txt
+
+      # Step 4: Commit and push the updated changelog
+      - name: Commit and Push Changelog
+        run: |
+          git add CHANGELOG.md
+          git commit -m "chore: update changelog"
+          git push
