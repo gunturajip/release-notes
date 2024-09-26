@@ -22,22 +22,22 @@ jobs:
 
       - name: Generate Changelog
         run: |
-          git log --pretty=format:"[https://github.com/${GITHUB_USERNAME}/${GITHUB_REPOSITORY}/commit/%h](%h): (%s) ([@%an](https://github.com/%an))" --grep="^feat:" > features.txt
-          git log --pretty=format:"[https://github.com/${GITHUB_USERNAME}/${GITHUB_REPOSITORY}/commit/%h](%h): (%s) ([@%an](https://github.com/%an))" --grep="^fix:" > fixes.txt
+          git log --pretty=format:"- [%h](https://github.com/${GITHUB_USERNAME}/${GITHUB_REPOSITORY}/commit/%h): (%s) ([@%an](https://github.com/%an))" --grep="^feat:" > features.txt
+          git log --pretty=format:"- [%h](https://github.com/${GITHUB_USERNAME}/${GITHUB_REPOSITORY}/commit/%h): (%s) ([@%an](https://github.com/%an))" --grep="^fix:" > fixes.txt
           echo "# Changelog" > CHANGELOG.md
 
-          echo "New Features" >> CHANGELOG.md
+          echo "**New Features**" >> CHANGELOG.md
           if [ -s features.txt ]; then
             cat features.txt >> CHANGELOG.md
           else
-            echo "No new features." >> CHANGELOG.md
+            echo "- No new features." >> CHANGELOG.md
           fi
 
-          echo "Bug Fixes" >> CHANGELOG.md
+          echo "\n**Bug Fixes**" >> CHANGELOG.md
           if [ -s fixes.txt ]; then
             cat fixes.txt >> CHANGELOG.md
           else
-            echo "No new fixes." >> CHANGELOG.md
+            echo "- No new fixes." >> CHANGELOG.md
           fi
 
           rm features.txt fixes.txt
