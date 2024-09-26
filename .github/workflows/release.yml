@@ -15,6 +15,10 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: Debugging - List Git History
+        run: |
+          git log --oneline --decorate --graph --all
+
       - name: Set up Git
         run: |
           git config --global user.name "github-actions[bot]"
