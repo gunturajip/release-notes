@@ -22,8 +22,11 @@ jobs:
 
       - name: Generate Changelog
         run: |
-          git log --oneline --grep="^feat:" > features.txt
-          git log --oneline --grep="^fix:" > fixes.txt
+          # Extract the commit messages with "feat:" and "fix:"
+          git log --pretty=format:"%s" --grep="^feat:" > features.txt
+          git log --pretty=format:"%s" --grep="^fix:" > fixes.txt
+
+          # Create the changelog file
           echo "# Changelog" > CHANGELOG.md
 
           echo "\n## Features" >> CHANGELOG.md
