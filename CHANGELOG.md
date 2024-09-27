@@ -1,41 +1,9 @@
 # Changelog
 
 **New Features**
-- [329fa95](https://github.com//gunturajip/release-notes/commit/329fa95): feat: feature 15 by [@gunturajip](https://github.com/gunturajip)
-- [d71035d](https://github.com//gunturajip/release-notes/commit/d71035d): feat: feature 14 by [@gunturajip](https://github.com/gunturajip)
-- [fa17ed5](https://github.com//gunturajip/release-notes/commit/fa17ed5): feat: feature 13 by [@gunturajip](https://github.com/gunturajip)
-- [b1e94c4](https://github.com//gunturajip/release-notes/commit/b1e94c4): feat: feature 13 by [@gunturajip](https://github.com/gunturajip)
-- [8db3f90](https://github.com//gunturajip/release-notes/commit/8db3f90): feat: feature 12 by [@gunturajip](https://github.com/gunturajip)
-- [ae75495](https://github.com//gunturajip/release-notes/commit/ae75495): feat: feature 11 by [@gunturajip](https://github.com/gunturajip)
-- [be2d9fa](https://github.com//gunturajip/release-notes/commit/be2d9fa): feat: feature 10 by [@gunturajip](https://github.com/gunturajip)
-- [4f09841](https://github.com//gunturajip/release-notes/commit/4f09841): feat: feature 9 by [@gunturajip](https://github.com/gunturajip)
-- [3d796b3](https://github.com//gunturajip/release-notes/commit/3d796b3): feat: feature 8 by [@gunturajip](https://github.com/gunturajip)
-- [807a053](https://github.com//gunturajip/release-notes/commit/807a053): feat: feature 7 by [@gunturajip](https://github.com/gunturajip)
-- [a085e3e](https://github.com//gunturajip/release-notes/commit/a085e3e): feat: feature 6 by [@gunturajip](https://github.com/gunturajip)
-- [af629de](https://github.com//gunturajip/release-notes/commit/af629de): feat: feature 5 by [@gunturajip](https://github.com/gunturajip)
-- [07c75e4](https://github.com//gunturajip/release-notes/commit/07c75e4): feat: feature 5 by [@gunturajip](https://github.com/gunturajip)
-- [a955aa7](https://github.com//gunturajip/release-notes/commit/a955aa7): feat: feature 4 by [@gunturajip](https://github.com/gunturajip)
-- [68e468d](https://github.com//gunturajip/release-notes/commit/68e468d): feat: feature 3 by [@gunturajip](https://github.com/gunturajip)
-- [42c6eb8](https://github.com//gunturajip/release-notes/commit/42c6eb8): feat: feature 2 by [@gunturajip](https://github.com/gunturajip)
-- [136356c](https://github.com//gunturajip/release-notes/commit/136356c): feat: feature 1 by [@gunturajip](https://github.com/gunturajip)
+- [5bb026c](https://github.com//gunturajip/release-notes/commit/5bb026c): feat: feature 16 by [@gunturajip](https://github.com/gunturajip)
 
 
 **Bug Fixes**
-- [39e99e4](https://github.com//gunturajip/release-notes/commit/39e99e4): fix: feature 14 by [@gunturajip](https://github.com/gunturajip)
-- [3ef0ff9](https://github.com//gunturajip/release-notes/commit/3ef0ff9): fix: feature 13 by [@gunturajip](https://github.com/gunturajip)
-- [bbab872](https://github.com//gunturajip/release-notes/commit/bbab872): fix: feature 12 by [@gunturajip](https://github.com/gunturajip)
-- [38b6bb0](https://github.com//gunturajip/release-notes/commit/38b6bb0): fix: feature 11 by [@gunturajip](https://github.com/gunturajip)
-- [29a76c0](https://github.com//gunturajip/release-notes/commit/29a76c0): fix: feature 10 by [@gunturajip](https://github.com/gunturajip)
-- [0351268](https://github.com//gunturajip/release-notes/commit/0351268): fix: feature 8 by [@gunturajip](https://github.com/gunturajip)
-- [4e02029](https://github.com//gunturajip/release-notes/commit/4e02029): fix: feature 7 by [@gunturajip](https://github.com/gunturajip)
-- [42dc1cb](https://github.com//gunturajip/release-notes/commit/42dc1cb): fix: feature 6 by [@gunturajip](https://github.com/gunturajip)
-- [fc8c4d7](https://github.com//gunturajip/release-notes/commit/fc8c4d7): fix: feature 4 by [@gunturajip](https://github.com/gunturajip)
-- [a0a569b](https://github.com//gunturajip/release-notes/commit/a0a569b): fix: conflic by [@gunturajip](https://github.com/gunturajip)
-- [32dbc6e](https://github.com//gunturajip/release-notes/commit/32dbc6e): fix: feature 4 by [@gunturajip](https://github.com/gunturajip)
-- [70c784a](https://github.com//gunturajip/release-notes/commit/70c784a): fix: feature 3 by [@gunturajip](https://github.com/gunturajip)
-- [b04d6db](https://github.com//gunturajip/release-notes/commit/b04d6db): fix: feature 2 by [@gunturajip](https://github.com/gunturajip)
-- [066986f](https://github.com//gunturajip/release-notes/commit/066986f): fix: update again again again feature 1 by [@gunturajip](https://github.com/gunturajip)
-- [3f23865](https://github.com//gunturajip/release-notes/commit/3f23865): fix: update again again feature 1 by [@gunturajip](https://github.com/gunturajip)
-- [25868b5](https://github.com//gunturajip/release-notes/commit/25868b5): fix: update again feature 1 by [@gunturajip](https://github.com/gunturajip)
-- [5194798](https://github.com//gunturajip/release-notes/commit/5194798): fix: update feature 1 by [@gunturajip](https://github.com/gunturajip)
+- [bb67701](https://github.com//gunturajip/release-notes/commit/bb67701): fix: feature 15 by [@gunturajip](https://github.com/gunturajip)
 
