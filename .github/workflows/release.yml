@@ -25,6 +25,12 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
+      - name: Get Year and Push Count
+        run: |
+          PUSH_COUNT=$(git rev-list --count master)
+          CURRENT_YEAR=$(date +"%Y")
+          echo "RELEASE_NAME=${CURRENT_YEAR}.${PUSH_COUNT}" >> $GITHUB_ENV
+
       - name: Generate Changelog
         run: |
           LATEST_TAG=$(git describe --tags `git rev-list --tags --max-count=1`)
@@ -64,8 +70,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          tag_name: "v${{ github.run_number }}"
-          release_name: "Release ${{ github.run_number }}"
+          tag_name: "${{ env.RELEASE_NAME }}"
+          release_name: "${{ env.RELEASE_NAME }}"
           body_path: CHANGELOG.md
           draft: false
           prerelease: false
